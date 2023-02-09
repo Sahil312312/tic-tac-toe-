@@ -1,0 +1,114 @@
+h1{
+    background-color:rgba(255, 182, 193, 0.48);
+    text-align: center;
+    color:black;
+    font-size: 4vw;
+    margin: 5vw;
+    margin-top: 0px;
+    padding: 3px;
+    border-radius: 40px;
+    /* font-style: ; */
+    
+}
+
+body{
+    background-color:lavender;
+}
+
+.boxtext{
+    color:lightseagreen;
+}
+
+.gamecontainer{
+   display: flex;
+   justify-content: center;
+
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+}
+
+/* .container div{
+    border: black solid  ;
+} */
+
+.box{
+    border:2px;
+    border:rgba(241, 113, 212, 0.272) solid  ;
+    font-size: 8vw;
+}
+
+.imgbox img{
+  margin:40px;
+    width:0;
+    transition: width 1s ease-in-out;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgba(7, 131, 40, 0.249);
+}
+
+.bu{
+    border-top: 0cm;
+}
+.bd{
+    border-bottom: 0cm;
+}
+.br{
+    border-right: 0cm;
+}
+.bl{
+    border-left: 0cm;
+}
+
+.info{
+    color: green;
+}
+
+#inf{
+    color: black;
+    font-size: 2vw;
+}
+
+.sidebar{
+    margin-left: 6vw;
+    size: 3vw;
+}
+
+.info{
+    font-size: 4vw;
+}
+
+#reset{
+    font-size: 2vw;
+    margin-left: 2vw;
+}
+
+@media screen and (max-width:800px)
+{
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+
+    .gameinfo{
+        margin-top: 34px;
+    }
+
+    .gameinfo h1{
+        font-size:1.5em;
+    }
+
+    .container{
+     grid-template: repeat(3,20vw);
+     grid-template-rows: repeat(3,20vw);   
+    }
+
+}
